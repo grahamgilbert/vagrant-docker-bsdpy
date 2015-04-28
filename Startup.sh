@@ -31,8 +31,6 @@ docker run -d \
 docker run -d \
   -p 0.0.0.0:67:67/udp \
   -v /usr/local/docker/nbi:/nbi \
-  # -e DOCKER_BSDPY_IP=$IP \
-  # -e DOCKER_BSDPY_IFACE=eth1 \
   -e BSDPY_IFACE=eth1 \
   -e BSDPY_NBI_URL=http://$IP \
   -e BSDPY_IP=$IP \
