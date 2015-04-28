@@ -14,7 +14,7 @@ VAGRANTFILE_API_VERSION = "2"
       config.vm.box = "puppetlabs/ubuntu-14.04-64-nocm"
       config.vm.provision :shell, :path => "Startup.sh"
 
-      onfig.vm.network "public_network"
+      config.vm.network "public_network"
 
       # If you are using a private network rather than your normal LAN, use the below instead:
       # config.vm.network "private_network", type: "dhcp"
